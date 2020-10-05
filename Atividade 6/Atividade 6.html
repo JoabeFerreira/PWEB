@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jokenpô</title>
+
+    <script>
+        alert("Vamos Jogar Jokenpô?");
+        opc=prompt("Escolha uma opção:\nPedra-1\nPapel-2\nTesoura-3");
+        if(opc==1){
+            opc="Pedra";
+        }else if(opc==2){
+            opc="Papel";
+        }else if(opc==3){
+            opc="Tesoura";
+        }
+        alert("Voce escolheu: "+opc);
+        pc=Math.random()//Pedra<=0.33  Papel<=0.66  Tesoura<=0.99
+        if(pc<=0.33){
+            if(opc=="Pedra"){
+                alert("Deu Empate");
+            }else if(opc=="Papel"){
+                alert("Papel cobre a Pedra, você Ganhou!!!");
+            }else if(opc=="Tesoura"){
+                alert("Pedra quebra Tesoura, você Perdeu :(");                
+            }
+        }else if(pc>0.33 && pc<=0.66){
+            if(opc=="Pedra"){
+                alert("Papel cobre a Pedra, você Perdeu :(");
+            }else if(opc=="Papel"){
+                alert("Deu Empate");
+            }else if(opc=="Tesoura"){
+                alert("Tesoura corta Papel, você Ganhou!!!");                
+            }           
+        }else if(pc>0.66){
+            if(opc=="Pedra"){
+                alert("Pedra quebra Tesoura, você Ganhou!!!");
+            }else if(opc=="Papel"){
+                alert("Tesoura corta Papel, você Perdeu :(");   
+            }else if(opc=="Tesoura"){                  
+                alert("Deu Empate");           
+            }   
+        }  
+        if(pc<=0.33){
+            pc="Pedra";
+        }else if(pc>0.33 && pc<=0.66){
+            pc="Papel";
+        }else if(pc>0.66){
+            pc="Tesoura";
+        }
+        alert("Sua escolha tinha sido: "+opc+"\nPC escolheu: "+pc);
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
