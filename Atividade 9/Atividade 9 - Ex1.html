@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade 9-Ex 1</title>
+</head>
+
+<body>
+	<script>
+		function retangulo(base,altura) {
+			this.base = altura;
+			this.altura = altura;
+		
+
+			this.calcArea= function () {
+                var area=this.base*this.altura;
+				var result = "Area do rentangulo: " + area ;
+				alert(result);
+			}
+
+		};
+        
+        var ret1= new retangulo(5,10);
+        ret1.calcArea();
+		
+		function Conta(){ // Superclasse
+			var nomeCorrent, banco, numCont, saldo;
+			function getNomeCorrent(){
+				return(nomeCorrent)
+			}
+			function getBanco(){
+				return(banco)
+			}
+			function getNumCont(){
+				return(numCont)
+			}
+			function getSaldo(){
+				return(saldo)
+			}
+
+			function setNomeCorrent(){
+				return(nomeCorrent)
+			}
+			function setBanco(){
+				return(banco)
+			}
+			function setNumCont(){
+				return(numCont)
+			}
+			function setSaldo(){
+				return(saldo)
+			}
+		}
+			
+		function Poupanca(){
+			var juros, dataVenc;
+
+			function setJuros(){
+				return(juros)
+			}
+			function setDataVenc(){
+				return(dataVenc)
+			}
+			function getJuros(){
+				return(juros)
+			}
+			function getDataVenc(){
+				return(dataVenc)
+			}
+		}
+
+		function Corrente(){
+			var saldoEspecial;
+			function getSaldoEspecial(){
+				return(saldoEspecial)
+			}
+			function setSaldoEspecial(){
+				return(saldoEspecial)
+			}
+		}
+
+		Poupanca.prototype = new Conta();
+		Corrente.prototype = new Conta();
+
+		var objPoup = new Poupanca();
+		var objCorrente = new Corrente();
+
+		objPoup.setNomeCorrent("Joabe Ferreira");
+		objPoup.setBanco("Banco do Brasil");
+		objPoup.setNumCont(101010);
+		objPoup.setSaldo(1550.00);
+		objPoup.setDataVenc("02/05/2020");
+		objPoup.setJuros(0.02);
+
+		objCorrente.setNomeCorrent("Rafael Marinelli");
+		objCorrente.setBanco("Bradesco");
+		objCorrente.setNumCont(200254);
+		objCorrente.setSaldo(4500.00);
+		objCorrente.setSaldoEspecial(1200.00);
+
+		alert("Nome: "+getNomeCorrent+"");
+
+	</script>
+</body>
+
+</html>
