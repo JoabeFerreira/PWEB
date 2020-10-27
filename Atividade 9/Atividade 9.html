@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Atividade 9-Ex 1</title>
+</head>
+
+<body>
+	<script>
+		function retangulo(base,altura) {
+			this.base = base;
+			this.altura = altura;
+		
+
+			this.calcArea= function () {
+                var area=this.base*this.altura;
+				var result = "Area do rentangulo: " + area ;
+				alert(result);
+			}
+
+		};
+        
+		var ret1= new retangulo(prompt("Digite a Base do Retangulo: "),
+								prompt("Digite a Altura do Retangulo: "));
+        ret1.calcArea();
+		
+		function Conta(){ // Superclasse
+			var nomeCorrent, banco, numCont, saldo;
+			this.getNomeCorrent = function (){
+				return(nomeCorrent)
+			}
+			this.getBanco = function (){
+				return(banco)
+			}
+			this.getNumCont = function (){
+				return(numCont)
+			}
+			this.getSaldo = function (){
+				return(saldo)
+			}
+
+			this.setNomeCorrent = function (value){
+				nomeCorrent = value;
+			}
+			this.setBanco = function (value){
+				banco = value;
+			}
+			this.setNumCont = function (value){
+				numCont = value;
+			}
+			this.setSaldo = function (value){
+				saldo = value;
+			}
+		}
+			
+		function Poupanca(){
+			var juros, dataVenc;
+
+			this.setJuros = function (value){
+				juros = value;
+			}
+			this.setDataVenc = function (value){
+				dataVenc = value;
+			}
+			this.getJuros = function (){
+				return(juros)
+			}
+			this.getDataVenc = function (){
+				return(dataVenc)
+			}
+		}
+
+		function Corrente(){
+			var saldoEspecial;
+			this.getSaldoEspecial = function (){
+				return(saldoEspecial)
+			}
+			this.setSaldoEspecial = function (value){
+				saldoEspecial = value;
+			}
+		}
+
+		Poupanca.prototype = new Conta();
+		Corrente.prototype = new Conta();
+
+		var objPoup = new Poupanca();
+		var objCorrente = new Corrente();
+
+		objPoup.setNomeCorrent("Joabe Ferreira");
+		objPoup.setBanco("Banco do Brasil");
+		objPoup.setNumCont(101010);
+		objPoup.setSaldo(1550.00);
+		objPoup.setDataVenc("02/05/2020");
+		objPoup.setJuros(0.02);
+
+		objCorrente.setNomeCorrent("Rafael Marinelli");
+		objCorrente.setBanco("Bradesco");
+		objCorrente.setNumCont(200254);
+		objCorrente.setSaldo(4500.00);
+		objCorrente.setSaldoEspecial(1200.00);
+
+		alert("Nome: "+objCorrente.getNomeCorrent()+
+			"\nBanco: "+objCorrente.getBanco()+
+			"\nNumero da conta: "+objCorrente.getNumCont()+
+			"\nSaldo na conta: "+objCorrente.getSaldo()+
+			"\nSaldo Especial: "+objCorrente.getSaldoEspecial());
+
+		alert("Nome: "+objPoup.getNomeCorrent()+
+			"\nBanco: "+objPoup.getBanco()+
+			"\nNumero da conta: "+objPoup.getNumCont()+
+			"\nSaldo na conta: "+objPoup.getSaldo()+
+			"\nData de Vencimento: "+objPoup.getDataVenc()+
+			"\nJuros: "+(objPoup.getJuros()*100)+"%");
+		
+
+	</script>
+</body>
+
+</html>
