@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8"/>
+        <script>
+            var quebrada=false;
+            function abreJanela()
+            {
+                arquivo = "janela-aberta.jpg";
+                document.getElementById("janela").src=arquivo;
+            }           
+            function fechaJanela()
+            {
+                arquivo = "janela-fechada.jpg";
+                document.getElementById("janela").src=arquivo;
+            }
+            function quebraJanela()
+            {
+                arquivo = "janela-quebrada.jpg";
+                document.getElementById("janela").src=arquivo;
+            }
+            
+        </script>
+    </head> 
+</html>
+<body>
+    <h1>Abra a Janela</h1>
+    <img src="janela-fechada.jpg" id="janela" onmouseover="abreJanela()" onmouseout="fechaJanela()" onclick="quebraJanela()">
+</body>
