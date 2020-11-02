@@ -1,0 +1,181 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    /* font-family: 'Fjalla One', sans-serif; */    
+    font-family: 'Roboto', sans-serif;   
+    color: #22d271;
+}
+
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#menu{
+    display: flex;
+    background-color: #302f2f;
+    margin: 0px; 
+}
+
+#menu li{
+    display: block;
+    padding: 15px;
+}
+
+#menu li:first-child{
+    margin-right: auto;
+}
+
+#perfil{
+    margin-top: 10%;
+    width:28%;
+    height: 28%;
+}
+.imgRedonda{
+    border-radius: 50%;
+    transition: all 0.2s;
+
+}
+.imgRedonda:hover{
+    border-radius: 0%;
+    transition: all 0.2s;
+}
+#home{
+    height: 55%;
+    width: 100%;
+    background-color: #22d271;
+    
+}
+
+#home h1{
+    color: white;
+    font-size: 25pt;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+#home h4{
+    color: white;
+    margin-top: 2px;
+    padding-bottom: 3%;
+}
+
+.centro{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+
+#sobreMim{
+    height: 60%;
+    width: 60%;
+    padding-bottom: 6%;
+    padding-top: 2%;
+
+}
+#projetos{
+    height: 60%;
+    width: 80vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #e5e6ea;
+}
+/* #projetos h1{
+    padding-top: 38px;
+} */
+.coluna1{
+    padding-right: 30px;
+}
+
+.coluna2{
+    padding-left: 30px;
+}
+.imagemProjeto{
+width: 15vw;
+height: 15vh;
+}
+.btn{
+    text-align: center;
+    border: 2px solid #22d271;
+    border-radius: 25px;
+    display: inline-block; /*Deixa os botões um do lado do outro*/
+    background-color:  #e5e6ea; /*Muda a cor do quadradinho*/
+    color: #22d271;
+    padding-left: 20px;
+    padding-right:20px;
+    height: 45px;
+
+    transition: all 0.2s;
+    font-size: medium;
+}
+.btn:hover{
+    background-color: #22d271;
+    color: white;
+    transition: all 0.2s;
+}
+#btn1{
+    padding-right: 30px;
+}
+#btn2{
+    padding-left: 30px;
+}
+
+#tecnologias{
+    display:flex;
+    height: 40%;
+    width: 80%;
+    padding-bottom: 5%;
+    padding-top: 2%;
+}
+.imgLing{
+    width: 80px;
+    height: 80px;
+}
+
+#contato{
+    height: 60%;
+    width: 80vw;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    background-color: #e5e6ea;
+}
+
+#phone{
+    display: table;
+}
+#email{
+    display: table;
+    text-align: center;
+}
+
+.imgCont{
+    width: 3%;
+    height: 3%;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.imgFooter{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+}

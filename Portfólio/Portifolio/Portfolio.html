@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joabe Ferreira - Portfólio</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <script src= "portfolio.js"></script>
+
+</head>
+<body>
+    <header>
+         <nav>
+            <ul id="menu">
+                <li><a href="#home">Joabe Ferreira</a></li>
+                <li><a href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#tecnologias">Tecnologias</a></li>
+
+                <li><a href="#rodape">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section id="home">
+        <div class="centro">
+            <img id="perfil" class="imgRedonda" src="imagens/foto-perfil.png">
+            <h1>Joabe Ferreira</h1>
+            <h4>Analista de Sistemas em Formação • Entusiasta da Tecnologia</h4>
+        </div>
+    </section> 
+    <section id="sobreMim" class="centro">
+        <div class="centro">
+            <h1>Sobre Mim</h1>
+            <p>Eu sou o Joabe. Estou cursando o 4° Semestre em Análise e Desenvolvimento de Sistemas pela FATEC Sorocaba. Sou apaixonado pelo mundo da tecnologia e um grande entusiasta da área. Sei trabalhar em equipe mas também me viro bem sozinho. Estou sempre disposto a aprender algo novo e sempre aberto a novos desafios.  </p>
+        </div>
+        
+    </section>
+    <section id="projetos" class="centro">
+        <div class="centro"> 
+            <h1>Projetos</h1>
+            <table class="centro">
+                <tr> 
+                    <td class="coluna1">
+                        <img class="imagemProjeto
+                        " src="imagens/data-mining.jpg">
+                    </td>
+                    <td class="coluna2"> 
+                        <img class="imagemProjeto
+                        " src="imagens/google-glass.png"> 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="coluna1">
+                        <h3>Web Scraper</h3>
+                        <hr>
+                        <p>É um projeto que faz uma mineração de dados em uma página de venda de produtos eletrônicos e devolve informações como preço, fabricante, disponibilidade do produto, etc.</p>
+                    </td>
+                    <td class="coluna2">
+                        <h3>Réplica Site Google Glass</h3>
+                        <hr>
+                        <p>Foi um projeto que desenvolvi enquanto estava estudando as tecnologias html e css por minha conta. É um site que simula o site de compra do Google Glass.</p>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td id="btn1">
+                        <a href="https://github.com/JoabeFerreira/Python-Web-Scraping" target="_blank"><div class="btn" >
+                            <p>Ver Projeto</p>
+                        </div></a>
+                    </td>
+                    <td id="btn2">
+                        <a href="https://github.com/JoabeFerreira/Replica_Site_Google_Glass-" target="_blank"><div class="btn" >
+                            <p>Ver Projeto</p>
+                        </div></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="tecnologias" class="centro">
+        <div class="centro">
+            <h1>Linguagens e Tecnologias</h1>
+            <table class="centro">
+            <tr> 
+                <td onclick="skillPy()"> <img class="imgLing" src="imagens/icone-python.png"> </td>
+                <td onclick="skillJs()"> <img class="imgLing" src="imagens/icone-js.png"> </td>
+                <td onclick="skillC()"> <img class="imgLing" src="imagens/icone-c.png"> </td>
+                <td onclick="skillJava()"> <img class="imgLing" src="imagens/icone-java.png"> </td>
+                <td onclick="skillHtml()"> <img class="imgLing" src="imagens/icone-html&css.jpg"> </td>
+            </tr>
+            <tr>
+                <td><b>Python</b></td>
+                <td><b>JavaScipt</b></td>
+                <td><b>C</b></td>
+                <td><b>Java</b></td>
+                <td><b>HTML & CSS</b></td>
+            </tr>
+            </table>
+        </div>
+        
+        <!-- <p>Python</p>
+        <p>C</p>
+        <p>JavaScript</p>
+        <p>Html e CSS</p> -->
+    </section>
+    <section id="contato" class="centro">
+        <h1>Contato</h1>
+        <p onclick="msgProf()"><b>Tel:</b> (15) 997405509</p>
+        <p><b>E-mail:</b> joa3.bys@hotmail.com</p>
+    </section>
+    
+</body>
+<footer id="rodape">
+    <p>Copyright 2020 - by Joabe Ferreira<br/>
+    <a href="https://www.facebook.com/joabe.ferreira.5492" target="_blank"><img class="imgFooter" src="imagens/icone-face.png"></a>
+    <a href="https://www.linkedin.com/in/joabe-ferreira/" target="_blank"><img class="imgFooter" src="imagens/icone-linkedin.png"></a>
+    <a href="https://github.com/JoabeFerreira" target="_blank"><img class="imgFooter" src="imagens/icone-github.png"></a></p>
+</footer>
+</html>
